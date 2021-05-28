@@ -1,18 +1,16 @@
-title: Python Physics
-iconURL: assets/default-icon.png
-theme: jekyll-theme-leaf
+name: Python Physics
+url: https://github.com/jmsdsouzaPhD
+description: Insert tagline here
 
-# for a clean URL
-permalink: :slug
+permalink: /themes/:title/
 
-social:
-  instagram: josiel_msdsouza
-  github: jmsdsouzaPhD
+plugins: [jekyll-paginate]
 
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
+highlighter: pygments
+paginate: 20
 
-### comments & analytics
-hyvor_talk_website_id: 14
-google_analytics: UA-NNNNNNNN-N
+markdown: rdiscount
+rdiscount:
+    extensions: ['smart']
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
