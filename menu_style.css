@@ -1,0 +1,100 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+.menu-bar{
+    background: rgba(1,1,1);
+    text-align: center;
+    width: 100%;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li
+{
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+}
+.menu-bar, .fab
+{
+    margin-right: 8px;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #3932ff;
+    border-radius: 3px;
+}
+.submenu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .submenu-1
+{
+    display: block;
+    position: absolute;
+    background: rgba(1,1,1);
+    margin-top: 5px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .submenu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.footer_style
+{
+    float:left;
+    background-color: #777;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.social-list ul
+{
+    list-style: none;
+    color: #fff;
+}
+.social-list ul li a
+{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+}
+.body_style
+{
+    background-image: url('figures/programming.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.section_style
+{
+    color: rgba(1,1,1);
+    background-color: rgb(255, 255, 255,0.95);
+    float: left;
+    padding: 20px;
+    width: 60%;
+    height: 1000px;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.aside_style
+{
+    float: right;
+    background-color: rgba(0, 0, 0,0.9);
+    padding: 0;
+    margin:0;
+    width: 30%;
+    height: 1100px;
+}
