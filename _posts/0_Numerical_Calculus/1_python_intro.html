@@ -14259,29 +14259,35 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Introdu&#231;&#227;o-ao-Python">Introdu&#231;&#227;o ao Python<a class="anchor-link" href="#Introdu&#231;&#227;o-ao-Python">&#182;</a></h1>
+<h1 id="1.-Introdu&#231;&#227;o-ao-Python:-Comandos-print()-e-type()-e-vari&#225;veis-dos-tipos-string,-int-e-float">1. Introdu&#231;&#227;o ao Python: Comandos <em>print()</em> e <em>type()</em> e vari&#225;veis dos tipos <em>string, int</em> e <em>float</em><a class="anchor-link" href="#1.-Introdu&#231;&#227;o-ao-Python:-Comandos-print()-e-type()-e-vari&#225;veis-dos-tipos-string,-int-e-float">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Neste tutorial será abordado as ferramentas e conceitos básicos da linguagem Python para fins do curso de Física Computacional I. O material aqui não se limita apenas a estudades de Física mas também para qualquer interessado no assunto. Bom aprendizado.</p>
-
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Neste tutorial será abordado as ferramentas e conceitos básicos da linguagem Python para fins do curso de Física Computacional I. O material aqui não se limita apenas a estudades de Física mas também para qualquer interessado no assunto. Bom aprendizado.
+</p>
+</html>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Primeira-Apresenta&#231;&#227;o-(Tipos-de-Vari&#225;veis-e-Impress&#227;o)">Primeira Apresenta&#231;&#227;o (Tipos de Vari&#225;veis e Impress&#227;o)<a class="anchor-link" href="#Primeira-Apresenta&#231;&#227;o-(Tipos-de-Vari&#225;veis-e-Impress&#227;o)">&#182;</a></h2>
+<h2 id="1.1.-Comando-print()-e-vari&#225;veis-do-tipo-string--ou-str">1.1. Comando <em>print()</em> e vari&#225;veis do tipo <em>string</em>  ou <em>str</em><a class="anchor-link" href="#1.1.-Comando-print()-e-vari&#225;veis-do-tipo-string--ou-str">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Observe o primeiro programa a seguir:</p>
-
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Observe a primeira linha de comando a seguir onde utilizamos o comando <b>print()</b>
+e o símbolo <b>#</b> para adicionar um comentrário:</p>
+</html>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!!&quot;</span><span class="p">)</span> <span class="c1"># O hashtag é usado para comentar alguma linha do seu código</span>
@@ -14316,11 +14322,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">var_texto</span> <span class="o">=</span> <span class="s2">&quot;Um texto&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Agora irei imprimir a variável de texto (&#39;var_text&#39;) na linha abaixo: </span><span class="se">\n</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">var_texto</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Agora irei imprimir a variável de texto </span><span class="se">\033</span><span class="s2">[1m var_text </span><span class="se">\033</span><span class="s2">[0m na linha abaixo: </span><span class="se">\n</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">var_texto</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14340,7 +14346,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Agora irei imprimir a variável de texto (&#39;var_text&#39;) na linha abaixo: 
+<pre>Agora irei imprimir a variável de texto <span class="ansi-bold"> var_text </span> na linha abaixo: 
  Um texto
 </pre>
 </div>
@@ -14353,16 +14359,20 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Acima foi apresentato a primeira variável do tipo texto/string (%s) com um nome arbitrário "var_texto" recevbendo o valor "Um texto". Para se imprimir a nossa variável dentro de um texto devemos utilizar o símbolo %s no lugar onde você deseja que sua variável seja escrita e em seguida, ao fim do texto, precisamos informar, através do símbolo (%), a variável que desejamos imprimir. Aqui também utilizamos o símbolo (\n) para pular uma linha.</p>
-
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Acima foi apresentato a primeira variável do tipo texto/string <b>%s</b> com um nome arbitrário <b>var_texto</b> recevbendo o valor <b>Um texto</b>. Para se imprimir a nossa variável dentro de um texto devemos utilizar o símbolo <b>%s</b> no lugar onde você deseja que sua variável seja escrita e em seguida, ao fim do texto, precisamos informar, através do símbolo <b>%</b>, a variável que desejamos imprimir. Aqui também utilizamos o símbolo <b>\n</b> para pular uma linha. <br/><br/>
+Note também que eu utilizei os comandos <b>\033[1m</b> e <b>\033[0m</b> para delimitar um texto que eu quero que esteja em negrito. Observe mais uma vez os exemplos abaixo.
+</p>
+</html>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Este texto não contêm formatação&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14370,6 +14380,571 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Este texto não contêm formatação
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m Este texto está em negrito </span><span class="se">\033</span><span class="s2">[0m&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre><span class="ansi-bold"> Este texto está em negrito </span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Além dos comandos para colocar uma parte do texto em negrito, observe quem também usamos o símbolo <b>\n</b>
+dentro do texto.<br/> Como na linguagem C, o símbolo <b>\n</b> é usando quando queremos pular uma linha dentro do nosso texto.<br/>
+Se queremos, por outro lado, adicionar uma tabulação em seu texto, usamos o símbolo <b>\t</b>.
+</p>
+</html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vamos adicioanr uma tabulação entre A e B:</span><span class="se">\n</span><span class="s2"> A </span><span class="se">\t</span><span class="s2"> B&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Vamos adicioanr uma tabulação entre A e B:
+ A 	 B
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Vamos agora trabalhar com operações utilizando variáveis do tipo texto.<br/>
+Primeiramente devemos saber que apenas podemos realizar operações de <b>ADIÇÃO</b> com esses tipos de variáveis.<br/>
+Vejamos agora o exemplo abaixo em adicionar duas variáveis do tipo <b>string</b>.
+</html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="s2">&quot;Texto 1&quot;</span>
+<span class="n">B</span> <span class="o">=</span> <span class="s2">&quot; + Texto 2&quot;</span>
+<span class="n">C</span> <span class="o">=</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estou somando as variáveis de texto A e B:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impressão Simples:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A + B = &quot;</span><span class="p">,</span> <span class="n">A</span> <span class="o">+</span> <span class="n">B</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Estou somando as variáveis de texto A e B:
+Impressão Simples:
+A + B =  Texto 1 + Texto 2
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impresão usando o símbolo de texto </span><span class="se">\033</span><span class="s2">[1m </span><span class="si">%s</span><span class="s2"> </span><span class="se">\033</span><span class="s2">[0m:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A + B = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Impresão usando o símbolo de texto <span class="ansi-bold"> %s </span>:
+A + B = Texto 1 + Texto 2
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Note aqui que se utilizarmos, dentro de um string, o símbolo <b>%s</b>
+sem espicificar em seguida, através do símbolo <b>%</b>, o que desejamos substituir no lugar,
+o seu compilador/terminal irá apenas retornar o texto inserido sem modificar o <b>%s</b>.
+</p>
+</html>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="1.2.-Vari&#225;veis-dos-tipos-inteiro-e-ponto-flutuante-(int,-float)">1.2. Vari&#225;veis dos tipos inteiro e ponto flutuante (<em>int, float</em>)<a class="anchor-link" href="#1.2.-Vari&#225;veis-dos-tipos-inteiro-e-ponto-flutuante-(int,-float)">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Variáveis do tipo interito (int), como o próprio nome informa, são aquelas que armazenam valores pertencenter ao conjunto dos números inteiros $\mathbb{Z}=\{...,\ -3,\ 2,\ 1,\ 0,\ 1,\ 2,\ 3,\ ...\}$. Esses tipos de variáveis possuem o símbolo <b>%d</b> em sua representação.<br/><br/>
+Já as variáveis do tipo ponto flutuante (float) são aquelas que armazenam qualquer valores do conjunto dos números reais $\mathbb{R}=\{...,\ -3,\ ..., -2.37825,\ ..., -2,\ -1.123, ..., 0,\ ... 3.14, ....\}$. Esses tipos de variáveis possuem o símbolo <b>%f</b> em sua representação.
+</p>
+</html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">B</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vamos perguntar agora ao programa qual é o tipo de cada variável acima através&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;do comando</span><span class="se">\033</span><span class="s2">[1m type() </span><span class="se">\033</span><span class="s2">[0m:&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Vamos perguntar agora ao programa qual é o tipo de cada variável acima através do comando<span class="ansi-bold"> type() </span>:
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>int</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>float</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="1.3.-Opera&#231;&#245;es-com-vari&#225;veis-int-e-float">1.3. Opera&#231;&#245;es com vari&#225;veis <em>int</em> e <em>float</em><a class="anchor-link" href="#1.3.-Opera&#231;&#245;es-com-vari&#225;veis-int-e-float">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+As possíveis operações que podem ser realizaras com variáveis dos tipos <i>int</i> e <i>float</i>
+são: <b>ADIÇÃO</b> (+), <b>SUBTRAÇÃO</b> (-), <b>MULTIPLICAÇÃO</b> (*), <b>DIVISÃO</b> (/), e <b>RESTO DE DIVISÃO INTEIRA</b> (%).<br/>
+Como bem conhecido operações de adição, subtração e multiplicação entre variáveis do tipo <i>int</i> sempre retornaram valores inteiros, enquanto que, com as demais operações, os valores retornados podem ser do tipo <i>float</i>.
+</p>
+</html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A = &quot;</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B = &quot;</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C = &quot;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>A =  3
+B =  2
+C =  3.14
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">B</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(int, int, float)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="o">-</span><span class="n">B</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="o">/</span><span class="n">B</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">B</span><span class="o">%</span><span class="k">A</span>)
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(int, int, int, float, int)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span><span class="o">+</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="o">-</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="o">*</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="o">/</span><span class="n">B</span><span class="p">,</span> <span class="n">B</span><span class="o">%</span><span class="k">A</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(5, 1, 6, 1.5, 2)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+As mesmas operações acima podem ser realizadas entre as variáveis inteiras A e B e a variável de ponto flutuante C. Realize seus testes em seu computador.
+</p>
+</html>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="#-Comandos-Apresentados:"># Comandos Apresentados:<a class="anchor-link" href="##-Comandos-Apresentados:">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<table style="width:50%"> 
+<tr>
+    <th><h2>Comandos</h2></th>
+    <th><h2>Significado</h2></th>
+</tr><tr>
+    <th>print()</th>
+    <th>Imprimir texto na tela</th>
+</tr><tr>
+    <th>type()</th>
+    <th>Mostra o tipo de uma variável desejada</th>
+</tr><tr>
+    <th>\n</th>
+    <th>Pula uma linha</th>
+</tr><tr>
+    <th>\t</th>
+    <th>Insere uma tabulação</th>
+</tr><tr>
+    <th>\033[1m ... \033[0m</th>
+    <th>Texto em negrito</th>
+</tr><tr>
+    <th>%s</th>
+    <th>Símbolo de variável <i>str</i></th>
+</tr><tr>
+    <th>%d</th>
+    <th>Símbolo de variável <i>int</i></th>
+</tr><tr>
+    <th>%f</th>
+    <th>Símbolo de variável <i>float</i></th>
+</tr><tr>
+    <th>+</th>
+    <th>Adição</th>
+</tr><tr>
+    <th>-</th>
+    <th>Subtração</th>
+</tr><tr>
+    <th>*</th>
+    <th>Multiplicação</th>
+</tr><tr>
+    <th>/</th>
+    <th>Divisão</th>
+</tr><tr>
+    <th>%</th>
+    <th>Resto de Divisão Inteira</th>
+</tr><tr>
+    <th>%</th>
+    <th>Identificador de substituição em <i>string</i></th>
+</tr>
+</table>
+</html>
+</div>
 </div>
 </body>
 
