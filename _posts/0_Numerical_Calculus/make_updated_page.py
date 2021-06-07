@@ -10,11 +10,12 @@ header = open("../../header.html").read()
 header = header.replace("figures/","../../figures/")
 #header = header.replace("./index.html","../../index.html")
 header = header.replace("href=\"","href=\"../../")
-header+= "\n <section style=\" float:left; padding:20px; width: 60%;\" >\n"
-
+header+= "\n <body style=\"background-image: url('../../figures/programming.jpg');background-attachment: fixed;background-size: 100% 100%;\">"
+header+= "\n<section style=\"padding:20px; width: 80%; margin-left:10%; background-color:rgba(255,255,255,0.98);\" >\n"
 footer = open("../../footer.html").read()
 footer = footer.replace("menu_style","../../menu_style")
-footer = "\n </section>\n"+footer
+footer = "\n</section>\n</body>\n"+footer
+
 
 new_file.write(header)
 for line in lines: new_file.write(line)
