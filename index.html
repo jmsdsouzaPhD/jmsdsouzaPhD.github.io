@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<head>
+  <html lang="pt-br">
+  <meta charset="utf-8">
+  <title>Python Physics Simulations</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
 
 <body class="body_style">
 <link rel="stylesheet" href="menu_style.css">
@@ -25,41 +32,38 @@
       <li><a href="#"><b>Mec&acirc;nica</b></a>
           <div class="submenu-1">
             <ul>
-            <li><a href="#"><b>Cinem&aacute;tica</b></a></li>
-            <li><a href="#"><b>Din&acirc;mica</b></a></li>
-            <li><a href="#"><b>Rota&ccedil;&atilde;o</b></a></li>
+            <li><a href="#"><b>Oscilador Harmônico</b></a></li>
+            <li><a href="#"><b>Oscilador Harmônico Amortecido</b></a></li>
+            <li><a href="#"><b>Oscilador Forçado</b></a></li>
+            <li><a href="#"><b>Osciladores Acoplados</b></a></li>
+            <li><a href="#"><b>Pêndulo de Foucault</b></a></li>
+            <li><a href="#"><b>Vórtices</b></a></li>
+            <li><a href="#"><b>Colisões</b></a></li>
             </ul>
           </div>
       </li>
-      <li><a href="#"><b>Termodin&acirc;mica</b></a>
+      <li><a href="#"><b>Termodinâmica e Mecânica Estatística</b></a>
         <div class="submenu-1">
           <ul>
             <li></li>
           </ul>
         </div>
       </li>
-      <li><a href="#"><b>Eletrodin&acirc;mica</b></a>
+      <li><a href="#"><b>Eletrodinâmica</b></a>
         <div class="submenu-1">
           <ul>
             <li></li>
           </ul>
         </div>
       </li>
-      <li><a href="#"><b>Mec&acirc;nica Qu&acirc;ntica</b></a>
+      <li><a href="#"><b>Mecânica Quântica</b></a>
         <div class="submenu-1">
           <ul>
             <li></li>
           </ul>
         </div>
       </li>
-      <li><a href="#"><b>Mec&acirc;nica Estat&iacute;stica</b></a>
-        <div class="submenu-1">
-          <ul>
-            <li></li>
-          </ul>
-        </div>
-      </li>
-      <li><a href="#" target="_blank"><b>Gravita&ccedil;&atilde;o</b></a>
+      <li><a href="#" target="_blank"><b>Gravitação e Cosmologia</b></a>
         <div class="submenu-1">
           <ul>
             <li></li>
@@ -76,12 +80,35 @@
 </center>
 
 <section class="section_style">
-    <center>
-      <h1><b>Postagens</b></h1>
-      <h2><b>Primeira Postagem!</b></h2><br/>
-      <img src="figures/animation2.gif" alt="Animation 2"><br/>
-      <b>Primeira Simula&ccedil;&atilde;o</b>
-    </center>
+      <h1 style="background-color: rgb(179, 179, 179); padding: 1%;">Conteúdos Postados</h1><br/>
+      <h3> Introdução ao Python: </h3>
+      <style>
+        ol li{list-style: none; margin-left: 10%;}
+        ol li i{color: black}
+        ol li b{color: black}
+      </style>
+      <ol>
+        <li><i class="far fa-check-square"></i><b> Comandos <i>print, type</i> e variáveis dos tipos str, int e float;</b></li>
+        <li><i class="far fa-square"></i><b> Variáveis Booleanas, Operadores Relacionais, Comandos (<i>if, while, do, for</i>);</b></li>
+        <li><i class="far fa-square"></i><b> Listas, Vetores, Matrizes e Biblioteca <i>Numpy</i>;</b></li>
+        <li><i class="far fa-square"></i><b> Geração de Gráficos com a Biblioteca <i>Matplotlib</i>;</b></li>
+        <li><i class="far fa-square"></i><b> Funções e Manipulação de Arquivos;</b></li>
+        <li><i class="far fa-square"></i><b> Biblioteca de Sistema Operacional <i>OS</i>;</b></li>
+        <li><i class="far fa-square"></i><b> Biblioteca Científica <i>Scipy</i></b></li>
+      </ol><br/><br/>
+      <h1 style="background-color: rgb(179, 179, 179); padding: 1%;">Primeira Simulação</h1><br/>
+      <h3>Órbita da Terra via solução numérica da respectiva equação de movimento usando o método
+        de Runge-Kutta de quarta ordem.
+      </h3>
+      <center><img src="figures/animation2.gif" alt="Animation 2" width=70%><br/></center>
+      
+      Equação de Movimento:
+      <p>
+      $$\frac{d^2\vec{r}}{dt^2} = -\frac{GM_{\odot}}{r^2}\hat{r}$$
+      $$(\ddot{r}-\dot{\phi}r)\hat{r} + (2\dot{\phi}\dot{r}+\ddot{\phi}r)\hat{\phi} = -\frac{GM_{\odot}}{r^2}\hat{r}$$
+      </p>
+
+      <b>Código em breve ...</b>
 </section>
 
 <aside class="aside_style">
@@ -95,14 +122,14 @@
       <a href="http://lattes.cnpq.br/0529749022051880"><b>Lattes iD</b></a>
     </p>
     <br/><br/>
-    <h1 style="text-align: left; margin-left: 10%; color: white;">Downloads:</h1>
+    <!--<h1 style="text-align: left; margin-left: 10%; color: white;">Downloads:</h1>
     <p style="text-align: left;  margin-left: 10%;">
       <a href="downloads/Apostila_FC1.pdf" download style="color: rgb(255, 255, 255);">
         <i style='margin-right: 1px;' class="far fa-file-pdf"></i>
         <b>Apostila de F&iacute;sica Computacional I</b></a>
         <br/><br/>
-    </p>
-    <h2 style="text-align: left; margin-left: 10%; color: white;">Plataformas &Uacute;teis:</h2><br/>
+    </p>-->
+    <h3 style="text-align: left; padding: 1%; color: white; background-color: rgb(3, 0, 161);">&emsp;Open-Source Web Applications:</h3><br/>
     <p style="text-align: left; margin-left: 10%;">
       <style>
         a:hover{background-color: blue; border-radius: 3px;}
@@ -112,7 +139,19 @@
       <a href="https://colab.research.google.com/"><b>Google Colab</b></a> <br/><br/>
       <img src="figures/logo_jupyter.png" alt="py logo" width=15% align="center">
       <a href="https://jupyter.org/"><b>Jupyter Notebook/Lab</b></a>
-    </p>
+    </p><br/>
+    <h3 style="text-align: left; padding: 1%; color: white; background-color: rgb(3, 0, 161);">&emsp;Links:</h3><br/>
+      <ol>
+        <li><i class="fab fa-python fa-2x" style="color:white"></i><a  href="https://www.python.org/" ><b style="color:white">Python Web Page</b></a>
+        <li><i class="fab fa-python fa-2x" style="color:white"></i><a  href="https://numpy.org/" ><b style="color:white">Numpy</b></a>
+        <li><i class="fab fa-python fa-2x" style="color:white"></i><a  href="https://matplotlib.org/" ><b style="color:white">Matplotlib</b></a>
+        <li><i class="fab fa-python fa-2x" style="color:white"></i><a  href="https://www.scipy.org/" ><b style="color:white">Scipy</b></a>
+      </ol><br/>
+      <h3 style="text-align: left; padding: 1%; color: white; background-color: rgb(3, 0, 161);">&emsp; Modelagem e Animação 3D:</h3><br/>
+      <center>
+      <img src="figures/upbge_logo.png" alt="upbge_logo" width=13%></img><a href="https://upbge.org/"><b style="color:white">UPBGE</b></a> &emsp;
+      <a href="https://www.blender.org/"><img src="figures/blender_logo.png" alt="blender_logo" width=40%></a>
+    </center>
     
     
 </aside>
