@@ -6,7 +6,7 @@ lines = data.readlines()
 new_file = open("Tutorial_1.html",'w')
 
 header = open("../../header.html").read()
-#header = header.replace("menu_style","../../menu_style")
+header = header.replace("menu_style","../../menu_style")
 header = header.replace("figures/","../../figures/")
 #header = header.replace("./index.html","../../index.html")
 header = header.replace("href=\"","href=\"../../")
