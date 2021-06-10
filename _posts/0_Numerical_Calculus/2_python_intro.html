@@ -14368,6 +14368,880 @@ Vejamos os exemplos abaixo:
 </div>
 
 </div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="2.2-Operadores-L&#243;gicos:-and,-or,-not">2.2 Operadores L&#243;gicos: <em>and, or, not</em><a class="anchor-link" href="#2.2-Operadores-L&#243;gicos:-and,-or,-not">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Além dos operadores mencionados acima, podemos querer combiar diversas condições para se obeter valores <b>True</b> ou <b>False</b>. Os operadores mais comuns são o <b>and</b> (E), <b>or</b> (Ou), <b>not</b> (Não).
+Vejamos os exemplos abaixo para entendermos na prática o que esses operadores fazem.
+</html>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="A-and-B-(retorna-True-caso-A-e-B-sejam-True,-caso-contr&#225;rio-retorna-False)">A <em>and</em> B (retorna True caso A e B sejam True, caso contr&#225;rio retorna False)<a class="anchor-link" href="#A-and-B-(retorna-True-caso-A-e-B-sejam-True,-caso-contr&#225;rio-retorna-False)">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span> <span class="c1"># mesmo que (False and True)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">False</span> <span class="ow">and</span> <span class="kc">False</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="A-or-B-(retorna-True-caso-A-ou-B-for-True,-caso-contr&#225;rio-retorna-False)">A <em>or</em> B (retorna True caso A ou B for True, caso contr&#225;rio retorna False)<a class="anchor-link" href="#A-or-B-(retorna-True-caso-A-ou-B-for-True,-caso-contr&#225;rio-retorna-False)">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">True</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span> <span class="c1"># mesmo que (False or True)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">False</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="not-A-(inverte-o-valor-de-A)"><em>not</em> A (inverte o valor de A)<a class="anchor-link" href="#not-A-(inverte-o-valor-de-A)">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ow">not</span> <span class="kc">True</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="ow">not</span> <span class="kc">False</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Podem também querer combinar diversas condições do tipo:<br/>
+    <b>A</b> <i>operador</i> <b>B</b> <i>operador</i> <b>C</b> <i>operador</i> <b>D</b> ... <br/>
+Geralmente não precisamos mais do que três variáveis (<b>A</b>, <b>B</b> e <b>C</b>).
+</html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span> <span class="ow">and</span> <span class="kc">True</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="2.3-Comandos-if-(se)-e-else-(sen&#227;o)">2.3 Comandos <em>if</em> (se) e <em>else</em> (sen&#227;o)<a class="anchor-link" href="#2.3-Comandos-if-(se)-e-else-(sen&#227;o)">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<p style="background-color: rgb(245,245,245); padding: 1%">
+Agora que sabemos como trabalhar com as variáveis boolenas <b>True</b> (Verdadeiro) e <b>False</b> (Falso)
+podemos agora colocá-los em prática em nossos códigos. <br/><br/>
+Basicamente temos a seguinte estrutura:<br/><br/>
+<b>if</b>(condição):<br/>
+    &emsp; comando1<br/>
+<b>else</b>: <br/>
+    &emsp; comando2<br/><br/>
+Ou simplesmente:<br/><br/>
+<b>if</b>(condição):<br/>
+    &emsp; comando1
+<br/><br/>
+é importante inseir uma tabulação (TAB) antes dos comandos condicionais para que eles sejam executados
+dentro do bloco do <b>if</b>.<br/>
+Vejamos os exemplos a seguir:
+</p>  
+</html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">B</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">C</span> <span class="o">=</span> <span class="s2">&quot;texto&quot;</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">A</span><span class="o">==</span><span class="n">B</span><span class="p">):</span> <span class="c1"># Aqui a condição é A==B</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A é igual a B&quot;</span><span class="p">)</span> <span class="c1"># esse comando será executado apenas se a condição do if for True</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A é diferente de B&quot;</span><span class="p">)</span> <span class="c1"># esse comando será executado apenas se a condição do if for False</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>A é diferente de B
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">C</span><span class="o">==</span><span class="s2">&quot;texto&quot;</span> <span class="ow">or</span> <span class="n">C</span><span class="o">==</span><span class="s2">&quot;palavra&quot;</span><span class="p">):</span> <span class="c1"># Aqui a condição é (C==&quot;texto&quot; or C==&quot;palavra&quot;)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A condição acima foi True: </span><span class="se">\t</span><span class="s2"> C = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">C</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>A condição acima foi True: 	 C = texto
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="ow">not</span> <span class="p">(</span><span class="n">A</span><span class="o">&gt;</span><span class="n">B</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A não é maior do que B&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A é maior do que B&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>A não é maior do que B
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="ow">not</span> <span class="p">(</span><span class="n">A</span><span class="o">&lt;</span><span class="n">B</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A não é menor do que B&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A é menor do que B&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>A é menor do que B
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="2.4-Comando-while-(enquanto)">2.4 Comando <em>while</em> (enquanto)<a class="anchor-link" href="#2.4-Comando-while-(enquanto)">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html><p style="background-color: rgb(245,245,245); padding: 1%">
+    O comando <b>while</b> é usado quando queremos que o comando seguinte a ele seja executado repetidamente "enquanto" a condição dentro do <b>while</b> seja satisfeita (<b>True</b>).<br/><br/>
+<b>while</b>(condição):<br/>
+    &emsp; comando<br/><br/>
+Vejamos o exemplo a seguir:
+</p></html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span><span class="p">(</span><span class="n">x</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">):</span> <span class="c1"># Os comando abaixo serão executados 4 vezes até x ser igual ou maior do que 5.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x = &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># A tabulção também é necessária no uso do while! </span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>x =  1
+x =  2
+x =  3
+x =  4
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="2.5-Comando-for-(para)">2.5 Comando <em>for</em> (para)<a class="anchor-link" href="#2.5-Comando-for-(para)">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html><p style="background-color: rgb(245,245,245); padding: 1%">
+    O comando <b>for</b> é um comando do tipo laço (<i>loop</i>) semelhante ao comando <b>while</b>, isto é, os comandos que estiverem abaixo do <b>for</b> serão executados enquanto sua condição for satisfeita.<br/>
+    O <b>for</b> se utiliza de "listas" (que serão tratadas na próxima aula) para executerem seus comandos condicionais. Abaixo veremos nossa primeira lista implícita <b>range(N)</b>, que basicamente é uma lista de números inteiros menores do que N: 
+<br/><br/>
+    range(N) = [0, 1, 2, 3, ..., N-2, N-1] 
+<br/><br/>
+    Exemplo:<br/> 
+&emsp; range(2) = [0, 1] <br/>
+&emsp; range(3) = [0, 1, 2] <br/>
+&emsp; range(4) = [0, 1, 2, 3] <br/>
+&emsp; range(5) = [0, 1, 2, 3, 4] <br/>
+<br/><br/>
+    Como utilizar o for:
+<br/><br/>
+    <b>for</b> i in range(N):<br/>
+    &emsp; <i>comandos condicionais</i>
+<br/><br/>
+Acima identificamos <b>i</b> (ou outro nome desejado) com um elemento da nossa lista que iniciará com o valor inical do mesmo (<b>i=0</b>), e será incrementado +1 (valor seguinte em nossa lista) até <b>i = N-1</b>. Enquanto a condição (<b>i &lt; N</b>) for satisfeita os comandos condicionais serão executados.
+<br/><br/>
+Vejamos os exemplos abaixo:
+</p></html>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exemplo de contador:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span> <span class="c1"># Aqui &quot;i&quot; começa com o valor 0. Esse valor será incrementado até i&lt;10</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;i = &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="c1"># Esse comando será executado várias vezes até i&lt;10 (tabulação necessária!)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>i =  0
+i =  1
+i =  2
+i =  3
+i =  4
+i =  5
+i =  6
+i =  7
+i =  8
+i =  9
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exemplo de operação matemática:</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span> <span class="c1"># a variável entre &quot;for&quot; e &quot;in&quot; pode ter qualquer nome. Aqui escolhemos &quot;j&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5 x </span><span class="si">%d</span><span class="s2"> = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">j</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>5 x 0 = 0
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exemplo de nomeação de arquivos: (Vamos trabalhar com arquivos na aula 5)</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;arquivo_</span><span class="si">%d</span><span class="s2">.txt&quot;</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span> <span class="c1"># Uma forma de acrescentar um número inteiro à um string.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[</span><span class="si">%d</span><span class="s2">] Nome do arquivo: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[0] Nome do arquivo: arquivo_0.txt
+[1] Nome do arquivo: arquivo_1.txt
+[2] Nome do arquivo: arquivo_2.txt
+[3] Nome do arquivo: arquivo_3.txt
+[4] Nome do arquivo: arquivo_4.txt
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html><p style="background-color: rgb(245,245,245); padding: 1%">
+Outras formas de usar o comando <b>for</b> com outras listas serão apresentadas na próxima aula.
+</p></html>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="#-Comandos-Apresentados:"># Comandos Apresentados:<a class="anchor-link" href="##-Comandos-Apresentados:">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<html>
+<table style="width:50%">
+<tr>
+    <th><h2>Comandos</h2></th>
+    <th><h2>Significado</h2></th>
+</tr><tr>
+    <th>True</th>
+    <th>Valor Veradeiro</th>
+</tr><tr>
+    <th>False</th>
+    <th>Valor Falso</th>
+</tr><tr>
+    <th> == </th>
+    <th> Operador "Igual a"
+</tr><tr>
+    <th> != </th>
+    <th> Operador "Diferente de" </th>
+</tr><tr>
+    <th> &lt; </th>
+    <th> Operador "Maior que" </th>
+</tr><tr>
+    <th> &gt; </th>
+    <th> Operador "Menor que" </th>
+</tr><tr>
+    <th> &lt;= </th>
+    <th> Operador "Menor ou igual a"</th>
+</tr><tr>
+    <th> &gt;= </th>
+    <th> Operador "Maior ou igual a" </th>
+</tr><tr>
+    <th>and</th>
+    <th>Operador lógico "E"</th>
+</tr><tr>
+    <th>or</th>
+    <th>Operador lógico "OU"</th>
+</tr><tr>
+    <th>not</th>
+    <th>Operador lógico "NÃO"</th>
+</tr><tr>
+    <th> if(<u>cond</u>): </th>
+    <th> Executa os comandos seguintes caso cond=True </th>
+</tr><tr>
+    <th> else: </th>
+    <th> Executa os comandos seguinte caso a condição do "if" seja False</th>
+</tr><tr>
+    <th> while(<u>cond</u>) </th>
+    <th> Executa os comandos seguintes repetidamente enquanto cond=True </th>
+</tr><tr>
+    <th> for <u>x</u> in <u>lista</u>:</th>
+    <th> Executa os comandos seguintes enquanto x estiver dentro da lista.
+</tr>
+
+</table>
+</html>
+</div>
+</div>
 </body>
 
 
