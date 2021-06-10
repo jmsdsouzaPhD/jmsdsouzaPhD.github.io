@@ -1,42 +1,32 @@
 
+num = 0
+while(num<1 or num>7):
+	num = int(input("Insira o número do tutorial [1-7]: "))
+	if(num<1 or num>7): print("\nError: Número Invalido!\n")
 
-data = open('1_python_intro.html')
+name1 = ("%d_python_intro.html"%num)
+name2 = ("Tutorial_%d.html"%num)
+
+data = open(name1)
+new_file = open(name2,'w')
 lines = data.readlines()
 
-new_file = open("Tutorial_1.html",'w')
+menu = open("Menu.txt").read()
 
 header = open("../../header.html").read()
 header = header.replace("menu_style","../../menu_style")
 header = header.replace("figures/","../../figures/")
-#header = header.replace("./index.html","../../index.html")
 header = header.replace("href=\"","href=\"../../")
+header = header.replace("<title></title>","<title>Introdução ao Python: %s</title>"%name2)
 header+= "\n <body style=\"background-image: url('../../figures/programming.jpg');background-attachment: fixed;background-size: 100% 100%;\">"
 header+= "\n<section style=\"padding:20px; width: 80%; margin-left:10%; background-color:rgba(255,255,255,0.98);\" >\n"
+header+=menu
+
 footer = open("../../footer.html").read()
 footer = footer.replace("menu_style","../../menu_style")
 footer = "\n</section>\n</body>\n"+footer
 
-
 new_file.write(header)
 for line in lines: new_file.write(line)
-
 new_file.write(footer)
 
-'''
-c1, c2 = True, True
-for line in lines:
-	cond1 = line.find("<body")
-	cond2 = line.find("body>")
-	if(cond1>=0 and c1):
-		header = open("../../header.html").read()
-		header = header.replace("menu_style","../../menu_style")
-		line = header + "\n<section class=\"section_style\">\n" + line
-		print(line) ; c1 = False
-	if(cond2>=0 and c2):
-		footer = open("../../footer.html").read()
-		footer = footer.replace("menu_style","../../menu_style")
-		line = "</section>\n\n" + line + footer 
-		print(line) ; c2 = False
-	new_file.write(line)
-new_file.close()
-'''

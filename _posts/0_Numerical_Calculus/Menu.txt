@@ -1,0 +1,11 @@
+<center>
+    <div class="menu-bar"><ul>
+      <li><a href="./Tutorial_1.html"><b>Aula 1: Variáveis (str, int, float)</b></a></li>
+      <li><a href="./Tutorial_2.html"><b>Aula 2: Comandos (if, while, for)</b></a></li>
+      <li><a href="./Tutorial_3.html"><b>Aula 3: Listas, Vetores e Numpy</b></a></li>
+      <li><a href="./Tutorial_4.html"><b>Aula 4: Gŕaficos com Matplotlib</b></a></li>
+      <li><a href="./Tutorial_5.html"><b>Aula 5: Funções e Arquivos</b></a></li>
+      <li><a href="./Tutorial_6.html"><b>Aula 6: Biblioteca OS</b></a></li>
+      <li><a href="./Tutorial_7.html"><b>Aula 7: Biblioteca Scipy</b></a></li>
+    </ul></div>
+</center><br/><br/>
