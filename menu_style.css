@@ -78,7 +78,8 @@
 {
     background-image: url('figures/programming.jpg');
     background-attachment: fixed;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .section_style
 {
