@@ -4,7 +4,11 @@ name2 = "2-Damped_Harmonic_Oscillator.html"
 name3 = "3-Coupled_Harmonic_Oscillators.html"
 names = [name1,name2,name3]
 
-for name in names:
+titles = ["Oscilador Harmônico","Oscilador Harmônico Amortecido","Osciladores Harmônicos Acoplados"]
+
+for i in range(3):
+	name = names[i]
+	title = titles[i]
 	#=================================================================
 	header = open("../../header.html").read()	# Abrindo o HEADE.HTML
 	header = header.replace("menu_style","../../menu_style")
@@ -49,6 +53,8 @@ for name in names:
 			idx_bdy1 = i
 			lines[i] = lines[i].replace("\"JupyterLab Light\"", "\"JupyterLab Light\" style=\"background-image: url('../../figures/programming.jpg');background-attachment: fixed;background-size: 100% 100%;\"")
 		if("/body>" in lines[i]): 	idx_bdy2 = i
+		if("padding: var(--jp-notebook-padding);" in lines[i]):
+			lines[i] = lines[i].replace("padding: var(--jp-notebook-padding);","/*padding: var(--jp-notebook-padding);*/")
 		
 	for i in range(idx_head_1+1):
 		new_file.write(lines[i])
@@ -56,14 +62,8 @@ for name in names:
 	for i in range(idx_head_1+1,idx_bdy1+1):
 		new_file.write(lines[i])
 	
-	bdy = """<style>
-		\t background-image: url('figures/programming.jpg');
-		\t background-attachment: fixed;
-		\t background-repeat: no-repeat;
-		\t background-size: 100%, 100%;
-	</style>"""
-	new_file.write("\n"+bdy+"\n")
-	new_file.write("\n"+header_conteudo+"\n <section class=\"section_style\" >\n")
+	new_file.write("\n\n"+header_conteudo+"\n\n<section class=\"section_style\" >\n\n")
+	new_file.write("\n\n<h3 style=\"font-size:20pt;color: white; background-color: rgb(3,0,161); padding:%s; text-align: center;\">%s</h3>\n\n"%("1%",title))
 	for i in range(idx_bdy1+1,idx_bdy2):
 		new_file.write(lines[i])
 	new_file.write("\n\n</section>\n\n")
