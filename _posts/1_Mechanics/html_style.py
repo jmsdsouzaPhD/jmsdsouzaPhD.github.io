@@ -5,52 +5,68 @@ name3 = "3-Coupled_Harmonic_Oscillators.html"
 names = [name1,name2,name3]
 
 for name in names:
-	data = open("simple_html/"+name)
-	new_file = open(name,'w')
-	lines = data.readlines()
-
-	header = open("../../header.html").read()
+	#=================================================================
+	header = open("../../header.html").read()	# Abrindo o HEADE.HTML
 	header = header.replace("menu_style","../../menu_style")
 	header = header.replace("figures/","../../figures/")
 	header = header.replace("href=\"","href=\"../../")
 	header = header.replace("<title></title>","<title>Mecânica Clássica: %s</title>"%name[2:-5])
-	header+= "\n <body style=\"background-image: url('../../figures/programming.jpg');background-attachment: fixed;background-size: 100% 100%;\">"
-	header+= "\n<section style=\"padding:20px; width: 80%; margin-left:10%; background-color:rgba(255,255,255,0.98);\" >\n"
+	#header+= "\n <body style=\"background-image: url('../../figures/programming.jpg');background-attachment: fixed;background-size: 100% 100%;\">"
+	#header+= "\n<section class=\"section_style\" >\n"
+	lines_header = header.split('\n') ; len_hdr = len(lines_header)
+	for i in range(len_hdr):
+		if("utf-8" in lines_header[i]): 		idx_head_1 = i+1
+		if("</head>" in lines_header[i]):   idx_head_2 = i
+		if("menu_style.css" in lines_header[i]):   idx_header_1 = i
+	idx_header_2 = len_hdr-1
 
-	#title = ("<title>Python: Tutorial %d</title>\n"%num)
-	#header += title
-
-	footer = open("../../footer.html").read()
+	# Preciso pegar o conteudo do <head>...</head> e do <header>...</header>
+	head_conteudo = "" ;	header_conteudo = ""
+	for i in range(idx_head_1,idx_head_2): 	 head_conteudo += lines_header[i]+"\n"
+	for i in range(idx_header_1,idx_header_2): header_conteudo += lines_header[i]+"\n"
+	#=================================================================
+	footer = open("../../footer.html").read()	# Abrindo o FOOTER.HTML
 	footer = footer.replace("menu_style","../../menu_style")
-
-	#buttons = ("\n<br/><br/><center>\n<a href=\"ipython/%d_python_intro.ipynb\" download><button class=\"button1\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i> Download .ipynb</button></a>&emsp;"%num)
-	#buttons += ("\n<a href=\"python/code%d.py\" download><button class=\"button1\"><i class=\"fa fa-download\" aria-hidden=\"true\"></i>  Download .py</button></a>\n</center><br/><br/>"%num)
-	buttons=""
-	footer = buttons+"\n</section>\n</body>\n"+footer
-
-
-	buttons_style = (
-	"\n\t"+
-	"<style>/* CSS Script */" + "\n\t\t" +
-		".button1{" + "\n\t\t\t" +
-			"background-color:blue;" + "\n\t\t\t" +
-			"color:white;" + "\n\t\t\t" +
-			"text-align:center;" + "\n\t\t\t" +
-			"margin: 3px 5px;" + "\n\t\t\t" +
-			"padding: 15px 32px;" + "\n\t\t\t" +
-			"font-weight:bold;" + "\n\t\t\t" +
-			"font-size:14px;" + "\n\t\t\t" +
-			"text-decoration: none;" + "\n\t\t\t" +
-			"border-radius:20px;" + "\n\t\t\t" +
-			"cursor:pointer;" + "\n\t\t\t" +
-			"box-shadow: 0 3px 3px black;" + "\n\t\t" +
-		"}" + "\n\t" +
-	"</style>" + "\n</head>"
-	)
-
-	header = header.replace("</head>","%s"%buttons_style)
-
-	new_file.write(header)
-	for line in lines: new_file.write(line)
-	new_file.write(footer)
+	#=================================================================
+	# Criando um Aside com o vídeo da simulação
+	aside = "\n<aside class=\"aside_style\">\n"
+	aside+= "<h3 style=\"text-align: left; padding: 1%; color: white; background-color: rgb(3, 0, 161);\">Animação com o Blender 2.8</h3><br/>\n"
+	aside+= "<video width=\"100%\" controls loop>\n"
+	aside+= "  <source src=\"%s.mp4\" type=\"video/mp4\">\n"%name[0:-5]
+	aside+= "  Your browser does not support HTML video.\n"
+	aside+= "</video>\n"
+	aside+= "</aside>\n"
+	#=================================================================
+	# Montando a versão final da pagina html
+	
+	data = open("simple_html/"+name)
+	new_file = open(name,'w')
+	lines = data.readlines() ; n = len(lines)
+	for i in range(n):
+		if("<head>" in lines[i]):  idx_head_1 = i
+		if("</head>" in lines[i]): idx_head_2 = i
+		if("<body" in lines[i]): 	
+			idx_bdy1 = i
+			lines[i] = lines[i].replace("\"JupyterLab Light\"", "\"JupyterLab Light\" style=\"background-image: url('../../figures/programming.jpg');background-attachment: fixed;background-size: 100% 100%;\"")
+		if("/body>" in lines[i]): 	idx_bdy2 = i
+		
+	for i in range(idx_head_1+1):
+		new_file.write(lines[i])
+	new_file.write("\n"+head_conteudo+"\n")
+	for i in range(idx_head_1+1,idx_bdy1+1):
+		new_file.write(lines[i])
+	
+	bdy = """<style>
+		\t background-image: url('figures/programming.jpg');
+		\t background-attachment: fixed;
+		\t background-repeat: no-repeat;
+		\t background-size: 100%, 100%;
+	</style>"""
+	new_file.write("\n"+bdy+"\n")
+	new_file.write("\n"+header_conteudo+"\n <section class=\"section_style\" >\n")
+	for i in range(idx_bdy1+1,idx_bdy2):
+		new_file.write(lines[i])
+	new_file.write("\n\n</section>\n\n")
+	new_file.write(aside)
+	new_file.write(footer+"\n\n </body>\n\n</html>")
 

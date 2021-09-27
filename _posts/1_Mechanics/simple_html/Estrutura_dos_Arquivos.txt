@@ -1,0 +1,54 @@
+# html gerado pelo Jupyter-Notebook
+
+<!DOCTYPE html>
+<html>
+
+<head>
+..............
+</head>
+
+<body class="jo-Notebook" ....>
+..............
+</body>
+
+</html>
+
+#=======================================
+
+# Estrutura do "header.html"
+
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+............
+</head>
+
+<body class="body_style">
+	<header>
+		Menu..............
+	</header>
+</body>
+
+
+#=======================================
+O que fazer?
+
+1 - Usar o html gerado pelo jp-Notebook ('jp-Note') como base:
+
+2 - Abrir o "header.html" e copiar os conteúdos de
+<head>...</head> e de <header>...</header>. Vou chama-los de:
+	head_base 	= conteudo_de_head(não incluir os <>)
+	header_base = conteudo_de_header(incluir os <>)
+
+3 - Colocar o conteudo do <body>...</body> do 'jp-Note' dentro
+de uma section <section>...</section>. Vou chamar-lo de:
+	style_cont = conteudo_de_body
+
+4 - Inserir o "head_base" dentro dos <head>...<head> do 'jp-Note'
+
+5 - Inserir o "header_base" dentro do <body>...</body> do 'jp-Note'
+
+6 - Abrir o arquivo "footer.html" e adicionar o seu conteudo antes
+do </html> do 'jp-Note'.
+

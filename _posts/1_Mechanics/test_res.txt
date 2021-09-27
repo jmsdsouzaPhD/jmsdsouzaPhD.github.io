@@ -1,0 +1,78 @@
+Conteudo do Head ....
+
+  <meta name="keywords" content="Python, Física, Simulações, Cálculo Numérico, Física Computacional"/>
+  <meta name="description" content="Site para orientar alunos de Física na criação de simulações utilizando a linguagem Python."/>
+  <meta name="revised" content="14/06/2021"/>
+  
+  <title>Python Physics Simulations</title>
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://kit.fontawesome.com/c9a6cd6305.js" crossorigin="anonymous"></script>
+
+
+
+Conteudo do Header .... 
+
+<header class="site-header" role="banner">
+  <div class="menu-bar">
+      <ul>
+      <style> a:hover{background-color:#3932ff;} a b{color:white;}</style>
+      <a href="../.././index.html" style="text-decoration:none;"><b>Home</b><i style="color: white;" class="fas fa-home fa-2x"></i></a>&emsp;
+      <li class="active"><a ><b>Física Computacional</b></a>
+        <div class="submenu-1">
+          <ul>
+            <li><a href="../../_posts/0_Numerical_Calculus/Tutorial_1.html"><b>Python</b></li>
+            <li><a href="../../#"><b>Diferencia&ccedil;&atilde;o</b></li>
+            <li><a href="../../#"><b>Integra&ccedil;&atilde;o</b></li>
+            <li><a href="../../#"><b>Equa&ccedil;&otilde;es Lineares</b></li>
+            <li><a href="../../#"><b>Equa&ccedil;&otilde;es N&atilde;o Lineares</b></li>
+            <li><a href="../../#"><b>Runge-Kutta</b></a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="../../#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><b>Mec&acirc;nica</b></a>
+          <div class="submenu-1">
+            <ul>
+            <li><a href="../../_posts/1_Mechanics/1-Harmonic_Oscillator.html"><b>Oscilador Harmônico</b></a></li>
+            <li><a href="../../_posts/1_Mechanics/2-Damped_Harmonic_Oscillator.html"><b>Oscilador Harmônico Amortecido</b></a></li>
+            <!--<li><a href="../../#"><b>Oscilador Forçado</b></a></li>-->
+            <li><a href="../../_posts/1_Mechanics/3-Coupled_Harmonic_Oscillators.html"><b>Osciladores Acoplados</b></a></li>
+            <li><a href="../../#"><b>Pêndulo de Foucault</b></a></li>
+            <!--<li><a href="../../#"><b>Vórtices</b></a></li>
+            <li><a href="../../#"><b>Colisões</b></a></li>-->
+            </ul>
+          </div>
+      </li>
+      <!-- Names: [] -->
+      <!--<li><a href="../../#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><b>Termodinâmica e Mecânica Estatística</b></a>
+        <div class="submenu-1">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="../../#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><b>Eletrodinâmica</b></a>
+        <div class="submenu-1">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="../../#"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><b>Mecânica Quântica</b></a>
+        <div class="submenu-1">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="../../#" target="_blank"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><b>Gravitação e Cosmologia</b></a>
+        <div class="submenu-1">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </li>-->
+      </ul>
+  </div>
+</header>
