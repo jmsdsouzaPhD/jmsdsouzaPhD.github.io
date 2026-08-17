@@ -1,0 +1,758 @@
+/* =========================================================
+   OBSERVATÓRIO DA FORMAÇÃO DO SANITARISTA
+   ========================================================= */
+
+
+/* =========================================================
+   CORES
+   ========================================================= */
+
+:root {
+  --navy: #031b36;
+  --navy-2: #063b61;
+
+  --teal: #18a99c;
+  --teal-dark: #087f7b;
+  --teal-light: #e0f4f1;
+
+  --blue: #1769a5;
+
+  --text: #172638;
+  --text-muted: #667788;
+
+  --background: #f5f8fa;
+  --white: #ffffff;
+
+  --border: #e3eaee;
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  color: var(--teal-dark) !important;
+}
+
+a:hover,
+a:active {
+  color: var(--teal) !important;
+}
+
+
+/* Títulos */
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+
+  font-size: 2rem;
+
+  border: none !important;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  background-color: var(--navy) !important;
+  min-height: 72px;
+
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Logo */
+
+.navbar-brand img {
+  height: 52px !important;
+  width: auto;
+  max-height: none !important;
+}
+
+
+/* Links da navbar */
+
+.navbar .nav-link {
+  color: white !important;
+
+  font-size: 0.92rem;
+  font-weight: 500;
+
+  padding: 0.55rem 1rem !important;
+
+  margin: 0.45rem 0.2rem;
+
+  border-radius: 8px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+/* Hover */
+
+.navbar .nav-link:hover {
+  background-color: #18a99c !important;
+
+  color: white !important;
+}
+
+
+/* Item atualmente selecionado */
+
+.navbar .nav-link.active {
+  background-color: #18a99c !important;
+
+  color: white !important;
+
+  border-bottom: none !important;
+}
+
+
+/* =========================================================
+   BOTÃO "PAINEL INTERATIVO"
+   ========================================================= */
+
+.navbar .nav-button {
+  background-color: #18a99c !important;
+
+  color: white !important;
+
+  border-radius: 8px;
+
+  padding: 0.55rem 1rem !important;
+
+  margin-left: 0.5rem;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.navbar .nav-button:hover {
+  background-color: #087f7b !important;
+
+  color: white !important;
+}
+
+/* =========================================================
+   HERO / HEADER
+   ========================================================= */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.quarto-title-banner {
+  position: relative;
+
+  /* ocupa toda a largura da janela */
+  width: 100vw;
+  max-width: none;
+
+  /* tira o banner do container central do Quarto */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  /* você ajusta depois */
+  height: 430px;
+  min-height: 430px;
+
+  overflow: hidden;
+
+  /* imagem */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+/*
+   Camada escura sobre a imagem.
+   Você pode aumentar/diminuir a opacidade.
+*/
+
+.quarto-title-banner::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 20, 45, 0.60),
+      rgba(0, 20, 45, 0.10)
+    );
+
+  z-index: 1;
+}
+
+
+/*
+   Container do título
+*/
+
+.quarto-title-banner .quarto-title {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding:
+    2rem 3rem;
+
+  text-align: left;
+}
+
+
+/*
+   Título principal
+*/
+
+.quarto-title-banner h1.title {
+  color: white !important;
+  font-style: italic;
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  text-align: left !important;
+}
+
+.quarto-title-banner .subtitle {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+  color: white !important;
+  text-align: left !important;
+}
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+main.content {
+  max-width: 1250px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 3rem 3rem;
+
+  background: #f2f4f5;
+
+  color: #172638;
+  alpha: 10%;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #7dc3bf 100%
+  );
+  /*color: white;*/
+}
+
+/* =========================================================
+   CARDS DE ACESSO RÁPIDO
+   ========================================================= */
+
+.quick-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  margin:
+    1rem 0 3rem;
+}
+
+
+.quick-card {
+
+  background:
+    var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 14px;
+
+  padding: 1.5rem;
+
+  min-height: 160px;
+
+  box-shadow:
+    0 5px 18px
+    rgba(0, 35, 70, 0.07);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.quick-card:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 10px 25px
+    rgba(0, 35, 70, 0.12);
+}
+
+
+.quick-card h3 {
+
+  margin-top: 0;
+
+  color:
+    var(--navy) !important;
+
+  font-size:
+    1.25rem;
+}
+
+
+.quick-card p {
+
+  color:
+    var(--text-muted);
+
+  line-height:
+    1.5;
+}
+
+
+/* =========================================================
+   INDICADORES
+   ========================================================= */
+
+.indicator-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 1rem;
+
+  margin:
+    1.5rem 0 3rem;
+}
+
+
+.indicator-card {
+
+  background:
+    var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    12px;
+
+  padding:
+    1.5rem;
+
+  text-align:
+    center;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0, 35, 70, 0.06);
+}
+
+
+.indicator-card h3 {
+
+  margin-top: 0;
+
+  color:
+    var(--text-muted) !important;
+
+  font-size:
+    1rem;
+}
+
+
+.indicator-card strong {
+
+  display: block;
+
+  margin-top: 0.5rem;
+
+  color:
+    var(--teal-dark);
+
+  font-size:
+    2.5rem;
+}
+
+
+/* =========================================================
+   SEÇÃO DO DASHBOARD
+   ========================================================= */
+
+.dashboard-section {
+
+  background:
+    var(--white);
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    14px;
+
+  padding:
+    1.5rem;
+
+  margin:
+    1.5rem 0 3rem;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 30, 60, 0.07);
+}
+
+
+#dashboard {
+
+  scroll-margin-top:
+    100px;
+}
+
+
+#dashboard iframe {
+
+  display:
+    block;
+
+  width:
+    100%;
+
+  height:
+    700px;
+
+  border:
+    none;
+
+  border-radius:
+    8px;
+
+  background:
+    white;
+}
+
+
+/* =========================================================
+   MANUAL
+   ========================================================= */
+
+.manual-card {
+
+  background:
+    white;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    14px;
+
+  padding:
+    2rem;
+
+  text-align:
+    center;
+
+  margin:
+    2rem 0;
+}
+
+
+.manual-card img {
+
+  display:
+    block;
+
+  max-width:
+    500px;
+
+  width:
+    100%;
+
+  height:
+    auto;
+
+  margin:
+    0 auto;
+
+  border-radius:
+    8px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   TABELAS
+   ========================================================= */
+
+.table {
+
+  background:
+    white;
+
+  border-radius:
+    10px;
+
+  overflow:
+    hidden;
+}
+
+
+.table thead {
+
+  background:
+    var(--navy);
+
+  color:
+    white;
+}
+
+
+.table thead th {
+
+  color:
+    white !important;
+}
+
+
+.table tbody tr:hover {
+
+  background:
+    var(--teal-light);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer,
+footer.footer {
+
+  background:
+    var(--navy) !important;
+
+  color:
+    #dbe7ef !important;
+
+  margin-top:
+    4rem;
+}
+
+
+.nav-footer {
+
+  max-width:
+    1250px;
+
+  margin-left:
+    auto !important;
+
+  margin-right:
+    auto !important;
+
+  padding:
+    2rem !important;
+
+  background:
+    var(--navy) !important;
+}
+
+
+.nav-footer-left,
+.nav-footer-center,
+.nav-footer-right {
+
+  color:
+    #dbe7ef !important;
+}
+
+
+footer a,
+footer a:link,
+footer a:visited {
+
+  color:
+    #9de5dd !important;
+}
+
+
+footer a:hover {
+
+  color:
+    white !important;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .quick-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .indicator-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+
+    min-height:
+      60px;
+  }
+
+
+  .navbar-brand img {
+
+    height:
+      42px !important;
+  }
+
+
+  .quarto-title-banner {
+
+    height:
+      350px;
+
+    min-height:
+      350px;
+  }
+
+
+  .quarto-title-banner .quarto-title {
+
+    padding:
+      1.5rem;
+  }
+
+
+  .quarto-title-banner h1.title {
+
+    font-size:
+      2.4rem;
+  }
+
+
+  .quarto-title-banner .subtitle {
+
+    font-size:
+      1rem;
+  }
+
+
+  main.content {
+
+    padding:
+      2rem 1rem;
+  }
+
+
+  .quick-grid {
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .indicator-grid {
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  #dashboard iframe {
+
+    height:
+      650px;
+  }
+
+}
