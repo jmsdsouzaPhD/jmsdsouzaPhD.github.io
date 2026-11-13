@@ -19,7 +19,7 @@ I am a **Postdoctoral Fellow** in Physics at the [**Núcleo Cosmo-UFES & PPGCosm
 
 I am a member of the **Einstein Telescope Observational Science Board (ET-OSB)** and the **Brazilian Einstein Telescope Synergy (BETS)**, and I collaborate on gravitational-wave research with the Brazilian Center for Physical Research (CBPF) and the National Institute for Space Research (INPE).
 
-My research interests lie in **Cosmology** and the **Astrophysics of Gravitational Waves**, with a strong emphasis on numerical modeling, data analysis, and parameter estimation. I have extensive experience in Python and C programming, high-performance computing (HPC), and large-scale numerical simulations. I am the developer of [**GWDALI**](https://pypi.org/project/gwdali/), an open-source Python package available on PyPI, which implements the Derivative Approximation for Likelihoods (DALI) method for parameter estimation of gravitational-wave sources.
+My research interests lie in **Cosmology** and the **Astrophysics of Gravitational Waves**, with a strong emphasis on numerical modeling, data analysis, and parameter estimation. I have extensive experience in Python and C programming, high-performance computing (HPC), and large-scale numerical simulations. I am the developer of [**GWDALI**](https://pypi.org/project/gwdali/), an open-source Python package available on PyPI, which implements the Derivative Approximation for Likelihoods (DALI) method for parameter estimation of gravitational-wave sources..
 
 ---
 
@@ -78,7 +78,7 @@ Member since January 2024. Contributing with improvements on the DALI approximat
 
 ::: {.sidebar-card}
 
-![Josiel Mendonça Soares de Souza](photo.jpg){.profile-photo}
+![Josiel Mendonça Soares de Souza](images/photo.jpg){.profile-photo}
 
 **Josiel M. S. de Souza**
 Postdoctoral Fellow

@@ -14,6 +14,10 @@ website:
         href: research.qmd
       - text: "Publications"
         href: publications.qmd
+      - text: "GWDALI"
+        href: gwdali.qmd
+      - text: "Videos"
+        href: videos.qmd
       - text: "Others"
         href: others.qmd
   page-footer:

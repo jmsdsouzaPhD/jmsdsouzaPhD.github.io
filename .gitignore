@@ -7,3 +7,6 @@ _site/
 *.aux
 *.log
 *.synctex.gz
+
+/.quarto/
+**/*.quarto_ipynb

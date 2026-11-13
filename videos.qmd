@@ -1,0 +1,81 @@
+---
+title: "Videos"
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-title: "Contents"
+    css: styles.css
+---
+
+::: {.content-wrapper-page}
+
+## Academic Talks & Presentations
+
+Selected recordings of seminars and conference talks on gravitational-wave cosmology and GWDALI.
+
+::: {.video-grid}
+
+::: {.video-card}
+### Beyond the Fisher Approximation in GW Data Analysis
+**Seminar** · Institute for Theoretical Physics, Heidelberg University (2026)
+
+{{< video https://www.youtube.com/embed/BFYfqC_Uhjs >}}
+
+*Introduction to DALI and its application to GW parameter estimation with the Einstein Telescope.*
+:::
+
+::: {.video-card}
+### Gravitational-Wave Inference with DALI
+**Academic Talk**
+
+{{< video https://www.youtube.com/embed/DS0pbJJss94 >}}
+
+*Overview of the DALI method and results on gravitational-wave posteriors beyond the Fisher approximation.*
+:::
+
+::: {.video-card}
+### Cosmology With Bright Standard Sirens
+**Academic Talk**
+
+{{< video https://www.youtube.com/watch?v=uy1J42M41dI >}}
+
+*Cosmology with bright standard sirens.*
+:::
+
+::: {.video-card}
+### Expoloring the DALI Approximation in Gravitational Wave Data Analysis
+**Academic Talk**
+
+{{< video https://www.youtube.com/watch?v=TA7Ko4i0fFY >}}
+
+*Expoloring the DALI Approximation in Gravitational Wave Data Analysis.*
+:::
+
+::: {.video-card}
+### Cosmography Forecasts With Gravitational Waves Using Einstein Telescope
+**Academic Talk**
+
+{{< video https://www.youtube.com/watch?v=I8WXoourgM4 >}}
+
+*Cosmography Forecasts With Gravitational Waves Using Einstein Telescope.*
+:::
+
+::: {.video-card}
+### [short video] GWDALI presentation on CENTRA (Lisbon, Portugal)
+**Academic Talk**
+
+{{< video https://www.youtube.com/watch?v=RlzU7zevP0A >}}
+
+*[short video] GWDALI presentation on CENTRA (Lisbon, Portugal).*
+:::
+
+:::
+
+---
+
+::: {.callout-note}
+More videos will be added soon. Stay tuned!
+:::
+
+:::
