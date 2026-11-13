@@ -98,6 +98,13 @@ UFES · Vitória, Brazil
 [{{< fa graduation-cap >}} Google Scholar](https://scholar.google.com.br/citations?user=QRp8XiAAAAAJ&hl=pt-BR&oi=sra)
 
 [{{< fa envelope >}} josiel.souza@ufes.br](mailto:josiel.souza@ufes.br)
+
+![](images/ufes.png){width=70%}
+
+![](images/ppgcosmo.png){width=70%}
+
+![](images/ET.png){width=100%}
+
 :::
 
 :::

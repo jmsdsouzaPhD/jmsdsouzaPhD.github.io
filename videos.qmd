@@ -18,7 +18,7 @@ Selected recordings of seminars and conference talks on gravitational-wave cosmo
 
 ::: {.video-card}
 ### Beyond the Fisher Approximation in GW Data Analysis
-**Seminar** · Institute for Theoretical Physics, Heidelberg University (2026)
+**Academic Talk**
 
 {{< video https://www.youtube.com/embed/BFYfqC_Uhjs >}}
 
