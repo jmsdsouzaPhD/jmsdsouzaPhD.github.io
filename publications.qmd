@@ -1,0 +1,39 @@
+---
+title: "Publications"
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-title: "By Year"
+    css: styles.css
+---
+
+## 2026
+
+**[8]** Mayara H. Pacheco et al. *Bright Siren Cosmology Beyond Fisher: DALI Forecasts for Third-Generation Gravitational Wave Observatories.* (Nov. 2026). [arXiv:2611.05338 [astro-ph.CO]](https://arxiv.org/abs/2611.05338)
+
+**[7]** Felipe A. da Silva Barbosa et al. *Fisher and DALI posterior approximations for testing gravity with gravitational waves.* (Sept. 2026). [arXiv:2609.38399 [astro-ph.IM]](https://arxiv.org/abs/2609.38399)
+
+**[6]** Josiel Mendonça Soares de Souza and Miguel Quartin. *On the use of the Derivative Approximation for Likelihoods for gravitational wave inference.* JCAP 05 (2026), p. 101. [doi:10.1088/1475-7516/2026/05/101](https://doi.org/10.1088/1475-7516/2026/05/101) · [arXiv:2510.16955 [astro-ph.IM]](https://arxiv.org/abs/2510.16955)
+
+**[5]** Adrian Abac et al. *The Science of the Einstein Telescope.* JCAP 03 (2026), p. 081. [doi:10.1088/1475-7516/2026/03/081](https://doi.org/10.1088/1475-7516/2026/03/081) · [arXiv:2503.12263 [gr-qc]](https://arxiv.org/abs/2503.12263)
+
+---
+
+## 2023
+
+**[4]** Josiel Mendonça Soares de Souza and Riccardo Sturani. *GWDALI: A Fisher-matrix based software for gravitational wave parameter-estimation beyond Gaussian approximation.* Astron. Comput. 45 (2023), p. 100759. [doi:10.1016/j.ascom.2023.100759](https://doi.org/10.1016/j.ascom.2023.100759) · [arXiv:2307.10154 [gr-qc]](https://arxiv.org/abs/2307.10154)
+
+**[3]** Josiel Mendonça Soares de Souza and Riccardo Sturani. *Luminosity distance uncertainties from gravitational wave detections of binary neutron stars by third generation observatories.* Phys. Rev. D 108.4 (2023), p. 043027. [doi:10.1103/PhysRevD.108.043027](https://doi.org/10.1103/PhysRevD.108.043027) · [arXiv:2302.07749 [gr-qc]](https://arxiv.org/abs/2302.07749)
+
+---
+
+## 2022
+
+**[2]** Josiel Mendonça Soares de Souza, Riccardo Sturani, and Jailson Alcaniz. *Cosmography with standard sirens from the Einstein Telescope.* JCAP 03.03 (2022), p. 025. [doi:10.1088/1475-7516/2022/03/025](https://doi.org/10.1088/1475-7516/2022/03/025) · [arXiv:2110.13316 [gr-qc]](https://arxiv.org/abs/2110.13316)
+
+---
+
+## 2021
+
+**[1]** Josiel Mendonça Soares de Souza and Riccardo Sturani. *Cosmological model selection from standard siren detections by third-generation gravitational wave observatories.* Phys. Dark Univ. 32 (2021), p. 100830. [doi:10.1016/j.dark.2021.100830](https://doi.org/10.1016/j.dark.2021.100830) · [arXiv:1905.03848 [gr-qc]](https://arxiv.org/abs/1905.03848)

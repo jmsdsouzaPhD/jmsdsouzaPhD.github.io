@@ -1,0 +1,94 @@
+---
+title: "Others"
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-title: "Contents"
+    css: styles.css
+---
+
+## Supervision & Mentoring
+
+**Ph.D. Supervision** (Mar. 2025 – present)  
+Mayara Hilgert Pacheco · *Gravitational Wave Cosmology with Dark Sirens* · INPE, São Paulo, Brazil
+
+**M.Sc. Supervision** (Mar. 2024 – Mar. 2025)  
+Mayara Hilgert Pacheco · *Determination of the Hubble Constant from Multi-messenger Astronomy Involving Gravitational Waves* · INPE, São Paulo, Brazil
+
+---
+
+## Honours & Awards
+
+- **Honorable Mention** — 2024 ICTP-SAIFR PhD Prize in Classical Gravity and Applications, ICTP South American Institute for Fundamental Research (2024)
+- **Honorable Mention** — Semana do PPGF 2021, Universidade Federal do Rio Grande do Norte (2021)
+- **Honorable Mention** — Semana do PPGF 2020, Universidade Federal do Rio Grande do Norte (2020)
+
+---
+
+## Conferences & Seminars
+
+### 2026
+- **Cosmic Rhythms** — CBPF, Rio de Janeiro, Brazil (Sep. 2026). *Poster: Gravitational-Wave Cosmology with Simulated Galaxy Catalogs and Dark Sirens*
+- **Third generation gravitational wave detectors: the view from Latin America** — Principia Institute, São Paulo, Brazil (Jun.–Jul. 2026). *Oral Communication: Gravitational-Wave Cosmology Beyond the Fisher Matrix: The Derivative Approximation for Likelihoods*
+- **XVI Einstein Telescope Symposium** — RWTH Aachen University, Aachen, Germany (Jun. 2026). *Oral Communication: Gravitational-Wave Inference Beyond the Fisher Approximation with DALI*
+- **Seminar** — Institute for Theoretical Physics, Heidelberg University, Germany (Jun. 2026). *Beyond the Fisher Approximation in Gravitational Wave Data Analysis*
+- **Seminar** — INFN, Pisa, Italy (Mar. 2026). *Beyond the Fisher Approximation in Gravitational Wave Data Analysis* (funded by ACME)
+
+### 2025
+- **First International Latin American Conference on Gravitational Waves** — São Paulo, Brazil (Sep. 2025). *Oral Communication: Exploring the DALI Approximation in Gravitational Wave Data Analysis*
+- **V Joint ICTP-Trieste/ICTP-SAIFR School on Cosmology** — São Paulo, Brazil (2025). *Poster: Beyond Fisher Approach for Gravitational Waves and Cosmology*
+- **Seminar** — UERJ, Rio de Janeiro, Brazil (2025). *From Fisher to DALI: Advancing Gravitational-Wave Data Analysis*
+
+### 2024
+- **III Workshop Antônio Brasil Batista** — Espírito Santo, Brazil (2024). *Oral Communication: GWDALI: Derivative Approximation for Gravitational Wave Likelihoods*
+- **VII CosmoSul** — Bahia, Brazil (2024). *Oral Communication: On the Derivative Approximation for Likelihoods of Standard Sirens*
+- **XIX Brazilian School of Cosmology and Gravitation** — Rio de Janeiro, Brazil (2024). *Poster: Derivative Approximation for Likelihoods on Gravitational Waves and Cosmology Using Autodiff*
+- **VII José Plínio Baptista School of Cosmology** — Espírito Santo, Brazil (2024). *Oral Communication: Beyond Gaussianity for Gravitational Wave Data Analysis at high-z Cosmology*
+- **Seminar** — Institute for Theoretical Physics, Heidelberg University, Germany (2024, Remote). *Derivative Approximation for Gravitational Wave Likelihoods*
+- **Seminar** — Center for Astrophysics and Gravitation, Instituto Superior Técnico, Lisbon, Portugal (2024). *GWDALI: Derivative Approximation for Gravitational Wave Likelihoods*
+
+### 2023
+- **São Paulo Advanced School on Multi-Messenger Astrophysics** — São Paulo, Brazil (2023). *Oral Communication: GWDALI: a Fisher Matrix Based Software to Estimate Standard Sirens Parameters Beyond Gaussianity-Level*
+
+### 2022
+- **Gravitational Wave Physics and Astronomy Workshop (GWPAW)** — Australia (Remote, 2022). *Poster: On the Distance Measurements of Bright Standard Sirens with 3G GW Detectors*
+- **Workshop on Classical Gravity and Applications, ICTP-SAIFR** — São Paulo, Brazil (2022). *Oral Communication: Late-Time Cosmology With Bright Standard Sirens*
+- **25th Annual Int. Conference on Particle Physics and Cosmology (COSMO'22)** — Rio de Janeiro, Brazil (2022). *Oral Communication: Cosmology With Bright Standard Sirens*
+
+### 2021
+- **14th Edoardo Amaldi Conference on Gravitational Waves** — Australia (Remote, 2021). *Oral Communication: Forecasts on Cosmography With Gravitational Waves Using Einstein Telescope*
+- **Semana do PPGF-UFRN** — Rio Grande do Norte, Brazil (2021). *Oral Communication: Gravitational Waves Cosmology*
+- **XXXV Encontro de Física do Norte e Nordeste** — Brazil (Remote, 2021). *Oral Communication: Cosmologia das Ondas Gravitacionais*
+
+### 2020
+- **Semana do PPGF-UFRN** — Rio Grande do Norte, Brazil (2020). *Oral Communication: Probing Dark Energy With Gravitational Waves*
+
+### 2018
+- **IV José Plínio Baptista School on Cosmology** — Espírito Santo, Brazil (2018). *Oral Communication: Discriminating Cosmological Expansion Models With Third Generation GW Detectors*
+
+---
+
+## Education
+
+| Period | Degree | Institution |
+|---|---|---|
+| Oct. 2025 – present | Postdoctoral Fellow | PPG-Cosmo, UFES (Vitória, ES) |
+| Jan. 2024 – Sep. 2025 | Postdoctoral Fellow | Instituto de Física, UFRJ (Rio de Janeiro) |
+| Mar. 2019 – Jul. 2023 | Ph.D. in Physics (Cosmology) | UFRN (Rio Grande do Norte) |
+| Mar. 2017 – Feb. 2019 | M.Sc. in Physics (Cosmology) | UFRN (Rio Grande do Norte) |
+| Feb. 2012 – Dec. 2017 | B.Sc. in Physics | UFRN (Rio Grande do Norte) |
+
+**Ph.D. Thesis:** *Late-Time Cosmology with Third Generation Gravitational Wave Observatories* · [Repository](https://repositorio.ufrn.br/items/555096fe-221c-4899-83b4-45378abf5fd6)
+
+**M.Sc. Thesis:** *Discriminating cosmological expansion models with third generation gravitational wave detectors* · [Repository](https://repositorio.ufrn.br/items/67ca986a-c3a9-4d87-9765-054534a30908)
+
+---
+
+## Skills
+
+**Programming:** Python · C/C++ · Git/GitHub · Docker · GitLab
+
+**Computing:** High-Performance Computing (HPC) · Parallel Computing · Large-Scale Numerical Simulations
+
+**Languages:** Portuguese (native) · English (C1) · Italian (A2)

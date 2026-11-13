@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Josiel M. S. de Souza"
+  navbar:
+    background: "#1a1a2e"
+    foreground: "#e0e0e0"
+    left:
+      - text: "Main"
+        href: index.qmd
+      - text: "Research Field"
+        href: research.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Others"
+        href: others.qmd
+  page-footer:
+    center: "© 2026 Josiel M. S. de Souza · Built with [Quarto](https://quarto.org)"
+    background: "#0f0f1a"
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    link-external-icon: false
+    link-external-newwindow: true
+
+filters:
+  - fontawesome
+
+execute:
+  freeze: auto

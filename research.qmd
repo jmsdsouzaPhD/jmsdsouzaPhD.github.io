@@ -1,0 +1,65 @@
+---
+title: "Research Field"
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-title: "Contents"
+    css: styles.css
+---
+
+## Overview
+
+My research lies at the intersection of **Gravitational Wave (GW) Astrophysics** and **Cosmology**. I focus on developing and applying statistical methods — in particular beyond-Gaussian parameter estimation techniques — to extract cosmological and astrophysical information from GW observations with current and next-generation detectors.
+
+---
+
+## Research Areas
+
+### Cosmology with Gravitational Waves
+
+Gravitational waves from compact binary coalescences (CBCs) provide a direct, independent measurement of luminosity distance, making them powerful **standard sirens** for cosmology. My work explores how third-generation (3G) detectors such as the **Einstein Telescope** and **Cosmic Explorer** can constrain cosmological parameters — including the Hubble constant $H_0$ and dark energy models — using both bright (electromagnetic-counterpart) and dark sirens (statistical methods with galaxy catalogs).
+
+### Parameter Estimation Beyond the Gaussian Approximation
+
+The standard Fisher-matrix approach to GW parameter estimation assumes Gaussian posteriors, which breaks down at low signal-to-noise ratio or for non-linear signal models. I develop and apply the **Derivative Approximation for Likelihoods (DALI)**, a higher-order expansion that captures non-Gaussian features of the posterior at low computational cost. DALI is implemented in [**GWDALI**](https://pypi.org/project/gwdali/), an open-source Python package I developed and maintain.
+
+### Third-Generation Gravitational Wave Observatories
+
+I study the science potential of next-generation GW observatories, contributing to the **Einstein Telescope** collaboration through the ET Observational Science Board (ET-OSB). My contributions span cosmology forecasts, detector network optimization, and gravitational-wave data analysis pipelines.
+
+### Numerical Modeling & High-Performance Computing
+
+A significant part of my work involves large-scale numerical simulations of GW source populations and Monte Carlo parameter estimation. I make extensive use of Python, C, and parallel computing on HPC clusters.
+
+---
+
+## Research Groups & Memberships
+
+### Núcleo Cosmo-UFES & PPGCosmo
+Postdoctoral Fellow (since Oct. 2025) at the Cosmology group of the Universidade Federal do Espírito Santo, funded by FAPES. Working on gravitational-wave cosmology and DALI-based inference.
+
+### Einstein Telescope Observational Science Board (ET-OSB)
+Member since June 2022. Active contributor to:
+
+- **Div. 1 — Fundamental Physics**
+- **Div. 2 — Cosmology**
+- **Div. 9 — Common Tools**
+
+### Brazilian Einstein Telescope Synergy (BETS)
+Member since January 2024. Contribution: improvements on the DALI approximation for GW data analysis and cosmology.
+
+### Previous Affiliations
+- **Instituto de Física, UFRJ** — Postdoctoral Fellow (Jan. 2024 – Sep. 2025)
+- **PPGF, UFRN** — Ph.D. in Physics / Cosmology (Mar. 2019 – Jul. 2023)
+
+---
+
+## Software
+
+### GWDALI
+An open-source Python package (available on [PyPI](https://pypi.org/project/gwdali/)) implementing the **Derivative Approximation for Likelihoods (DALI)** for GW parameter estimation beyond the Gaussian approximation, in user-defined detector networks.
+
+```bash
+pip install gwdali
+```

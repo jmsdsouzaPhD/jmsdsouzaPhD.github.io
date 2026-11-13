@@ -1,0 +1,244 @@
+/* ── Global ── */
+:root {
+  --bg-dark:        #0a0a14;
+  --bg-card:        rgba(16, 18, 38, 0.82);
+  --bg-card-hover:  rgba(28, 30, 55, 0.90);
+  --accent:         #7b8cde;
+  --accent-light:   #a9b4f0;
+  --text-main:      #dde1f0;
+  --text-muted:     #9aa3c2;
+  --border:         rgba(80, 90, 160, 0.35);
+}
+
+body {
+  background-color: var(--bg-dark) !important;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: var(--text-main) !important;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.75;
+}
+
+/* Dark overlay over background to keep text readable */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 18, 0.72);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#quarto-document-content,
+.quarto-title-block,
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Navbar ── */
+.navbar {
+  background-color: rgba(10, 10, 25, 0.80) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent-light) !important;
+  letter-spacing: 0.03em;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-muted) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem !important;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent-light) !important;
+  background: rgba(123, 140, 222, 0.12);
+}
+
+/* ── Page title / header ── */
+#quarto-document-content h1.title,
+.quarto-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  margin-bottom: 0.2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 1.4rem;
+}
+
+/* ── Links ── */
+a {
+  color: var(--accent-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover { color: #fff; text-decoration: underline; }
+
+/* ── Sidebar card (right column) ── */
+.sidebar-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.6rem 1.2rem;
+  text-align: center;
+  position: sticky;
+  top: 90px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-card p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.sidebar-card strong {
+  display: block;
+  color: var(--text-main);
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.1rem;
+}
+
+.sidebar-card hr {
+  border-color: var(--border);
+  margin: 1rem 0;
+}
+
+/* ── Profile photo ── */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  display: block;
+  margin: 0 auto 0.8rem;
+  box-shadow: 0 4px 20px rgba(123,140,222,0.3);
+}
+
+/* ── Social links ── */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+}
+
+.social-links a {
+  display: block;
+  color: var(--text-muted) !important;
+  font-size: 0.88rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.social-links a:hover {
+  color: var(--accent-light) !important;
+  background: rgba(123,140,222,0.1);
+  text-decoration: none;
+}
+
+/* ── Affiliation table ── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table td {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  color: var(--text-main);
+  font-size: 0.95rem;
+}
+
+table td:first-child {
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+  width: 160px;
+}
+
+/* ── Publication entries ── */
+p strong {
+  color: var(--accent);
+}
+
+/* ── Main content glass card (left column only) ── */
+.main-card {
+  background: rgba(10, 12, 28, 0.70);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2rem 2.4rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.55);
+}
+
+/* ── TOC sidebar (publications page) ── */
+#TOC {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 0.88rem;
+}
+
+/* ── Footer ── */
+.nav-footer {
+  background: rgba(8, 8, 20, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-footer a { color: var(--accent-light); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .sidebar-card { position: static; margin-top: 2rem; }
+  .main-card { padding: 1.2rem; }
+}
