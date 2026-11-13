@@ -1,8 +1,9 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-
-/.quarto/
-**/*.quarto_ipynb
+_site/
+.quarto/
+*.aux
+cat > .gitignore << 'EOF'
+_site/
+.quarto/
+*.aux
+*.log
+*.synctex.gz
